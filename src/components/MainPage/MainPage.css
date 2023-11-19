@@ -1,0 +1,66 @@
+.main-page {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+
+.centered-search {
+    width: 60%;
+}
+
+.custom-search-bar{
+   
+    font-weight: 500; /* Medium weight for Inter */
+    font-size: 17px;
+    outline: 1px solid #AFBACA;
+}
+
+.custom-search-bar ::placeholder{
+    color: #8897AE;
+}
+
+.upgrade-message {
+    padding-top: 10px; 
+    padding-left: 10px; 
+    font-size: 12px; 
+    text-align: left;
+    color: #5E718D;
+}
+
+.old-layout-link {
+    color: #007bff; 
+    text-decoration: none; 
+    cursor: pointer;
+    
+}
+
+.svg-item {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.message-bubble-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.message-bubble {
+    background-color: #E9EFF6; 
+    border-radius: 7px; 
+    padding: 10px 200px; 
+    max-width: 60%; 
+    font-size: 16px;
+    color: #455468 ;
+}
+
+
+
