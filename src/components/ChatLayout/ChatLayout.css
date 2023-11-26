@@ -1,0 +1,43 @@
+.ChatLayout {
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.ChatLayout > div {
+    position: relative;
+    height: 500px;
+    
+}
+
+.cs-message-input__content-editor-wrapper  {
+    background-color: #F3F6F6 !important;
+}
+
+.cs-message-input__content-editor{
+    background-color: #F3F6F6 !important;
+}
+
+.cs-main-container {
+    border-radius: 20px !important;
+    padding: 10px;
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.header > div {
+    margin-left: 10px;
+}
+
+.header > div > p {
+    margin: 0 0 0 10px;
+    text-align: left;
+}
