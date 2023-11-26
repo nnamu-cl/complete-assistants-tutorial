@@ -30,6 +30,15 @@
 
 .c-fikloo{
   width: 70% !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.c-gMpNkY {
+  max-width: 500px !important; 
+  width: 500px !important;
 }
 
 @keyframes App-logo-spin {

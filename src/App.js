@@ -3,7 +3,7 @@ import './App.css';
 import MainPage from "./components/MainPage/MainPage";
 import ChatBot from "./components/ChatBot/ChatBot";
 import ChatLayout from "./components/ChatLayout/ChatLayout";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 function App() {
 
@@ -13,6 +13,26 @@ function App() {
         console.log(`Search query: ${value}`);
         setShowMainPage(false); // Hide MainPage
     }
+
+    function changeMaxWidth() {
+        const elements = document.querySelectorAll('.vfrc-message');
+        console.log("running on: ", elements.length)
+        elements.forEach((element) => {
+            element.style.maxWidth = '600px';
+            element.style.width = '600px';
+        });
+        
+    }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            changeMaxWidth(); // Check and apply style changes
+        }, 1000); // Poll every second (adjust the interval as needed)
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
 
 
     return (
